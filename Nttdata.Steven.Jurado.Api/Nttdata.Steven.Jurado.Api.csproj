@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Nttdata.Steven.Jurado.Application\Nttdata.Steven.Jurado.Application.csproj" />
     <ProjectReference Include="..\Nttdata.Steven.Jurado.Repository.Sql\Nttdata.Steven.Jurado.Repository.Sql.csproj" />
     <ProjectReference Include="..\Nttdata.Steven.Jurado.Repository\Nttdata.Steven.Jurado.Repository.csproj" />
   </ItemGroup>

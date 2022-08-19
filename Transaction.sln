@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.32428.217
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Presentation", "1.Presentation", "{564629BE-8F5A-47C8-BE59-953D1DA8192F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Domain", "2.Domain", "{86029828-79EB-42CC-ADDD-BE7AD9C2C170}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Domain", "3.Domain", "{86029828-79EB-42CC-ADDD-BE7AD9C2C170}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Infrastructure", "3.Infrastructure", "{2A201AE7-FE2B-4660-8199-42DA12A069AC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Infrastructure", "4.Infrastructure", "{2A201AE7-FE2B-4660-8199-42DA12A069AC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.1.Repositoy", "3.1.Repositoy", "{04AA4B4B-C3CF-4613-B246-0C2EA352587C}"
 EndProject
@@ -25,6 +25,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nttdata.Steven.Jurado.Repository.Sql", "Nttdata.Steven.Jurado.Repository.Sql\Nttdata.Steven.Jurado.Repository.Sql.csproj", "{84F903C2-0C1B-4BB9-B757-8E4C2D9E58FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Application", "2.Application", "{A29C8874-31F5-431B-9660-99640165294D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nttdata.Steven.Jurado.Application", "Nttdata.Steven.Jurado.Application\Nttdata.Steven.Jurado.Application.csproj", "{1E15D389-BE92-411B-A3B1-DDD0F38E81F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +52,10 @@ Global
 		{84F903C2-0C1B-4BB9-B757-8E4C2D9E58FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84F903C2-0C1B-4BB9-B757-8E4C2D9E58FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84F903C2-0C1B-4BB9-B757-8E4C2D9E58FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E15D389-BE92-411B-A3B1-DDD0F38E81F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E15D389-BE92-411B-A3B1-DDD0F38E81F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E15D389-BE92-411B-A3B1-DDD0F38E81F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E15D389-BE92-411B-A3B1-DDD0F38E81F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +66,7 @@ Global
 		{2E3A2BC9-1063-4660-8413-4A1657E47B31} = {86029828-79EB-42CC-ADDD-BE7AD9C2C170}
 		{F48738F9-0647-4544-B738-610050D621DF} = {04AA4B4B-C3CF-4613-B246-0C2EA352587C}
 		{84F903C2-0C1B-4BB9-B757-8E4C2D9E58FA} = {04AA4B4B-C3CF-4613-B246-0C2EA352587C}
+		{1E15D389-BE92-411B-A3B1-DDD0F38E81F9} = {A29C8874-31F5-431B-9660-99640165294D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ADB98203-637D-44A9-9B54-8D6F82397EE5}

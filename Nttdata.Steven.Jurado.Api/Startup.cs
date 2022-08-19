@@ -6,6 +6,8 @@
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
     using Microsoft.OpenApi.Models;
+    using Nttdata.Steven.Jurado.Application.AppServices;
+    using Nttdata.Steven.Jurado.Application.Services;
     using Nttdata.Steven.Jurado.Repository.Sql.Context;
 
     public class Startup
@@ -27,7 +29,12 @@
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Nttdata.Steven.Jurado.Api", Version = "v1" });
             });
 
+            //Base Datos
             services.AddScoped<TransactionContext>();
+
+            services.AddScoped<IClientService, ClientService>();
+            services.AddScoped<IBankAccountService, BankAccountService>();
+            services.AddScoped<ITransactionService, TransactionService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
