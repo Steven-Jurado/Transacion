@@ -5,12 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Nttdata.Steven.Jurado.Domain\Nttdata.Steven.Jurado.Domain.csproj" />
+    <ProjectReference Include="..\Nttdata.Steven.Jurado.Repository.Sql\Nttdata.Steven.Jurado.Repository.Sql.csproj" />
   </ItemGroup>
 
 </Project>
