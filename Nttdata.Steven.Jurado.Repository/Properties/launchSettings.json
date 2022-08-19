@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Nttdata.Steven.Jurado.Repository": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "Key": "Value",
+        "ConnectionString": "Server=localhost;Database=nttdata;Trusted_Connection=True;"
+      }
+    }
+  }
+}
