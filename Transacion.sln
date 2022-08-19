@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32428.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Application", "1.Application", "{564629BE-8F5A-47C8-BE59-953D1DA8192F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Domain", "2.Domain", "{86029828-79EB-42CC-ADDD-BE7AD9C2C170}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Infrastructure", "3.Infrastructure", "{2A201AE7-FE2B-4660-8199-42DA12A069AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.1.Repositoy", "3.1.Repositoy", "{04AA4B4B-C3CF-4613-B246-0C2EA352587C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nttdata.Steven.Jurado.Api", "Nttdata.Steven.Jurado.Api\Nttdata.Steven.Jurado.Api.csproj", "{7D5534DB-089E-49C0-B1C0-14D430D9AFF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nttdata.Steven.Jurado.Domain", "Nttdata.Steven.Jurado.Domain\Nttdata.Steven.Jurado.Domain.csproj", "{2E3A2BC9-1063-4660-8413-4A1657E47B31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nttdata.Steven.Jurado.Repository", "Nttdata.Steven.Jurado.Repository\Nttdata.Steven.Jurado.Repository.csproj", "{F48738F9-0647-4544-B738-610050D621DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D540932C-A322-4A19-9BAC-48245461227F}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D5534DB-089E-49C0-B1C0-14D430D9AFF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D5534DB-089E-49C0-B1C0-14D430D9AFF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D5534DB-089E-49C0-B1C0-14D430D9AFF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D5534DB-089E-49C0-B1C0-14D430D9AFF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E3A2BC9-1063-4660-8413-4A1657E47B31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E3A2BC9-1063-4660-8413-4A1657E47B31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E3A2BC9-1063-4660-8413-4A1657E47B31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E3A2BC9-1063-4660-8413-4A1657E47B31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F48738F9-0647-4544-B738-610050D621DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F48738F9-0647-4544-B738-610050D621DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F48738F9-0647-4544-B738-610050D621DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F48738F9-0647-4544-B738-610050D621DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{04AA4B4B-C3CF-4613-B246-0C2EA352587C} = {2A201AE7-FE2B-4660-8199-42DA12A069AC}
+		{7D5534DB-089E-49C0-B1C0-14D430D9AFF8} = {564629BE-8F5A-47C8-BE59-953D1DA8192F}
+		{2E3A2BC9-1063-4660-8413-4A1657E47B31} = {86029828-79EB-42CC-ADDD-BE7AD9C2C170}
+		{F48738F9-0647-4544-B738-610050D621DF} = {04AA4B4B-C3CF-4613-B246-0C2EA352587C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ADB98203-637D-44A9-9B54-8D6F82397EE5}
+	EndGlobalSection
+EndGlobal
