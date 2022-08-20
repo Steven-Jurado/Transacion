@@ -5,7 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DTOs\" />
+    <ProjectReference Include="..\Nttdata.Steven.Jurado.Domain\Nttdata.Steven.Jurado.Domain.csproj" />
+    <ProjectReference Include="..\Nttdata.Steven.Jurado.Repository\Nttdata.Steven.Jurado.Repository.csproj" />
   </ItemGroup>
 
 </Project>
