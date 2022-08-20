@@ -6,11 +6,8 @@
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
     using Microsoft.OpenApi.Models;
-    using Nttdata.Steven.Jurado.Application.AppServices;
-    using Nttdata.Steven.Jurado.Application.Services;
-    using Nttdata.Steven.Jurado.Repository.Interfaces;
-    using Nttdata.Steven.Jurado.Repository.Repositories;
-    using Nttdata.Steven.Jurado.Repository.Sql.Context;
+    using Nttdata.Steven.Jurado.Api.Helpers;
+    using System.Reflection;
 
     public class Startup
     {
@@ -28,21 +25,20 @@
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Nttdata.Steven.Jurado.Api", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "Api de transaccionalidad",
+                    Version = System.Diagnostics.FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).FileVersion,
+                    Description = "Contiene los endpoints necesarios para el funcionamiento del transaccionalidad",
+                    Contact = new OpenApiContact()
+                    {
+                        Email = "stevejurado797@gmail.com",
+                        Name = "Desarrollador Software"
+                    }
+                });
             });
 
-            //Base Datos
-            services.AddScoped<TransactionContext>();
-
-            //Services
-            services.AddScoped<IClientService, ClientService>();
-            services.AddScoped<IBankAccountService, BankAccountService>();
-            services.AddScoped<ITransactionService, TransactionService>();
-
-            //Repositoy
-            services.AddScoped<IClientRepository, ClientRepository>();
-            services.AddScoped<IBankAccountRepository, BankAccountRepository>();
-            services.AddScoped<ITransactionRepository, TransactionRepository>();
+            services.StartInjectionDependency();
 
         }
 
