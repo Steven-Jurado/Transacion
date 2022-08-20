@@ -3,11 +3,9 @@
     using Nttdata.Steven.Jurado.Domain.Helpers;
     using System;
     using System.ComponentModel.DataAnnotations;
-    using System.Net;
 
     public class ClientRequest
     {
-
         public Guid IdClient { get; set; }
 
         public string UserName { get; set; }

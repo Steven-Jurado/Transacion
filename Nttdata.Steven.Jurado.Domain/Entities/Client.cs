@@ -5,6 +5,7 @@
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
+    using System.Text.Json.Serialization;
 
     public class Client : Person
     {
@@ -20,6 +21,8 @@
         [Required]
         public Status Status { get; set; } = Status.Inactive;
 
+        [JsonIgnore]
+        [NotMapped]
         [InverseProperty(nameof(BankAccount.ClientNav))]
         public ICollection<BankAccount> BankAccountNav { get; set; }
     }

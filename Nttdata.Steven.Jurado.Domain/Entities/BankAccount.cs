@@ -5,6 +5,7 @@
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
+    using System.Text.Json.Serialization;
 
     public class BankAccount
     {
@@ -33,6 +34,9 @@
         [InverseProperty(nameof(Client.BankAccountNav))]
         public Client ClientNav { get; set; }
 
+
+        [JsonIgnore]
+        [NotMapped]
         [InverseProperty(nameof(Transaction.BankAccountNav))]
         public ICollection<Transaction> TransactionsNav { get; set; }
     }
