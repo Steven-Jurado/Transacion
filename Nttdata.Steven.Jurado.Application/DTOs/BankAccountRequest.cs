@@ -21,6 +21,10 @@
         [DataType("decimal(4,2)")]
         public decimal BankAccountBalance { get; set; }
 
+
+        public decimal BankAccountAvailableBalance { get; set; }
+
+
         public Status BankAccountStatus { get; set; } = Status.Inactive;
     }
 }

@@ -4,6 +4,7 @@
     using Nttdata.Steven.Jurado.Application.Helpers;
     using Nttdata.Steven.Jurado.Application.Services;
     using Nttdata.Steven.Jurado.Domain.Entities;
+    using Nttdata.Steven.Jurado.Domain.Helpers;
     using Nttdata.Steven.Jurado.Repository.Interfaces;
     using System;
     using System.Collections.Generic;
@@ -40,6 +41,13 @@
 
         public async Task<bool> AddBankAccountAsync(BankAccountRequest bankAccountRequest)
         {
+
+            if (bankAccountRequest.BankAccountAvailableBalance > bankAccountRequest.BankAccountBalance)
+                throw new TransactionExceptionHelper($"Saldo Disponible ${bankAccountRequest.BankAccountAvailableBalance} Mayor al Saldo Inicia ${bankAccountRequest.BankAccountBalance}");
+
+            if (bankAccountRequest.BankAccountAvailableBalance == 0)
+                bankAccountRequest.BankAccountAvailableBalance = bankAccountRequest.BankAccountBalance;
+
             var responseConvert = ConvertHelper.ConvertType<BankAccount>(bankAccountRequest);
 
             responseConvert.BankAccountAvailableBalance = responseConvert.BankAccountBalance;

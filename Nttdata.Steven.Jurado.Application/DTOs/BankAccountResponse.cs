@@ -3,7 +3,7 @@
     using Nttdata.Steven.Jurado.Domain.Helpers;
     using System;
 
-    public class BankAccountResponse 
+    public class BankAccountResponse
     {
         public Guid IdBankAccount { get; set; }
 
@@ -16,6 +16,8 @@
         public decimal BankAccountBalance { get; set; }
 
         public Status BankAccountStatus { get; set; }
+
+        public decimal BankAccountAvailableBalance { get; set; }
 
         public ClientRequest ClientNav { get; set; }
     }

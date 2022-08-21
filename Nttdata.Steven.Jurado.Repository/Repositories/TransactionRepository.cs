@@ -3,6 +3,7 @@
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Logging;
     using Nttdata.Steven.Jurado.Domain.Entities;
+    using Nttdata.Steven.Jurado.Domain.Helpers;
     using Nttdata.Steven.Jurado.Repository.Helpers;
     using Nttdata.Steven.Jurado.Repository.Interfaces;
     using Nttdata.Steven.Jurado.Repository.Sql.Context;

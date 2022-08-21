@@ -64,7 +64,7 @@
             try
             {
 
-                return await _transactionService.SaveTransacctionAsync(transacctionRequest) ? Ok() : NoContent();
+                return await _transactionService.SaveTransacctionAsync(transacctionRequest) ? Created("Transaccion",transacctionRequest) : NoContent();
             }
             catch (Exception Ex)
             {
