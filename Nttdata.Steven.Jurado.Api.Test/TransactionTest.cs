@@ -1,20 +1,8 @@
 namespace Nttdata.Steven.Jurado.Api.Test
 {
-    using Microsoft.AspNetCore.Http;
-    using Microsoft.AspNetCore.Mvc;
-    using Microsoft.AspNetCore.Mvc.Testing;
     using Microsoft.EntityFrameworkCore;
-    using Microsoft.Extensions.Logging;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
-    using Moq;
-    using Nttdata.Steven.Jurado.Api.Controllers;
-    using Nttdata.Steven.Jurado.Application.AppServices;
     using Nttdata.Steven.Jurado.Application.DTOs;
-    using Nttdata.Steven.Jurado.Application.Helpers;
-    using Nttdata.Steven.Jurado.Application.Services;
-    using Nttdata.Steven.Jurado.Domain.Entities;
-    using Nttdata.Steven.Jurado.Repository.Interfaces;
-    using Nttdata.Steven.Jurado.Repository.Repositories;
     using Nttdata.Steven.Jurado.Repository.Sql.Context;
     using System.Threading.Tasks;
 
