@@ -11,7 +11,7 @@
         public Guid IdUsuario { get; set; }
 
         [Required(ErrorMessage = "Campo Requerido")]
-        [RegularExpression("^([0-9]){10,16}", ErrorMessage = "Campo solo permite numeros entre 10 - 16 caracteres")]
+        [RegularExpression("^([0-9]){6,16}", ErrorMessage = "Campo solo permite numeros entre 10 - 16 caracteres")]
         public string BankAccountNumber { get; set; }
 
         [Required(ErrorMessage = "Campo Requerido")]

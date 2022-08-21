@@ -75,11 +75,11 @@
 
             try
             {
+                if (string.IsNullOrWhiteSpace(clientRequest.UserName))
+                    clientRequest = GenerateUserName(clientRequest);
 
                 DeleteWhiteSpace(clientRequest);
 
-                if (string.IsNullOrWhiteSpace(clientRequest.UserName))
-                    clientRequest = GenerateUserName(clientRequest);
 
                 return await _clientService.AddClientAsync(clientRequest) ? Created("Usuario", clientRequest) : NoContent();
             }

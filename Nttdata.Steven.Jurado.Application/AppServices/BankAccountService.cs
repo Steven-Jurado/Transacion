@@ -42,6 +42,8 @@
         {
             var responseConvert = ConvertHelper.ConvertType<BankAccount>(bankAccountRequest);
 
+            responseConvert.BankAccountAvailableBalance = responseConvert.BankAccountBalance;
+
             return await _bankAccountRepository.AddBankAccountAsyn(responseConvert);
         }
 

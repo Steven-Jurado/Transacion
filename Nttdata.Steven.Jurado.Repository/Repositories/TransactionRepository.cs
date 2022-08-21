@@ -98,12 +98,13 @@
                 if (responseBankAccountRepository.BankAccountStatus.Equals((int)Domain.Helpers.Status.Active))
                     throw new TransactionExceptionHelper($"Cuenta {responseBankAccountRepository.BankAccountType} Bancaria Bloqueada Contactese Con El Banco Steven Jurado +593 959 799 934");
 
-                if (responseBankAccountRepository.BankAccountBalance <= transaction.TransactionValue)
+                if (responseBankAccountRepository.BankAccountAvailableBalance <= transaction.TransactionValue)
                     throw new TransactionExceptionHelper($"Saldo No Disponible En Cuenta {responseBankAccountRepository.BankAccountStatus} Contactese Con El Banco Steven Jurado +593 959 799 934");
 
                 if (responseBankAccountRepository.BankAccountBalance >= transaction.TransactionValue)
                 {
                     await _transactionContext.Transactions.AddAsync(transaction);
+                    responseBankAccountRepository.BankAccountAvailableBalance -= transaction.TransactionValue;
                 }
 
                 return await UpdateBankAccount(responseBankAccountRepository);
