@@ -2,7 +2,6 @@
 {
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Logging;
-    using Newtonsoft.Json;
     using Nttdata.Steven.Jurado.Domain.Entities;
     using Nttdata.Steven.Jurado.Domain.Helpers;
     using Nttdata.Steven.Jurado.Repository.Interfaces;
@@ -59,10 +58,6 @@
                 _logger.LogCritical("Ocurrio un error al Obtener Cuentas Bancarias {0}", Ex.Message);
                 return null;
             }
-            finally
-            {
-                await _transactionContext.DisposeAsync();
-            }
         }
 
         public async Task<bool> AddBankAccountAsyn(BankAccount bankAccount)
@@ -100,10 +95,6 @@
             {
                 _logger.LogCritical("Ocurrio un error al Eliminar Cuentas Bancarias {0}", Ex.Message);
                 return false;
-            }
-            finally
-            {
-                await _transactionContext.DisposeAsync();
             }
         }
 
