@@ -22,10 +22,6 @@
         [DataType("decimal(4,2)")]
         public decimal TransactionValue { get; set; }
 
-        [Required]
-        [DataType("decimal(4,2)")]
-        public decimal TransactionBalance { get; set; }
-
         [ForeignKey(nameof(IdBankAccount))]
         [InverseProperty(nameof(BankAccount.TransactionsNav))]
         public BankAccount BankAccountNav { get; set; }
