@@ -25,10 +25,10 @@ namespace Nttdata.Steven.Jurado.Repository.Sql.Context
         {
             if (!optionsBuilder.IsConfigured)
             {
-                //optionsBuilder.UseSqlServer(Environment.GetEnvironmentVariable("ConnectionString"));
-                optionsBuilder.UseSqlServer("Server=localhost;Database=nttdata;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=localhost,14333;Database=nttdata;User Id=SA;Password=nttdata1234;");
             }
         }
+
 
 
     }

@@ -11,24 +11,29 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Infrastructure", "4.Infra
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.1.Repositoy", "3.1.Repositoy", "{04AA4B4B-C3CF-4613-B246-0C2EA352587C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nttdata.Steven.Jurado.Api", "Nttdata.Steven.Jurado.Api\Nttdata.Steven.Jurado.Api.csproj", "{7D5534DB-089E-49C0-B1C0-14D430D9AFF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nttdata.Steven.Jurado.Api", "Nttdata.Steven.Jurado.Api\Nttdata.Steven.Jurado.Api.csproj", "{7D5534DB-089E-49C0-B1C0-14D430D9AFF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nttdata.Steven.Jurado.Domain", "Nttdata.Steven.Jurado.Domain\Nttdata.Steven.Jurado.Domain.csproj", "{2E3A2BC9-1063-4660-8413-4A1657E47B31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nttdata.Steven.Jurado.Domain", "Nttdata.Steven.Jurado.Domain\Nttdata.Steven.Jurado.Domain.csproj", "{2E3A2BC9-1063-4660-8413-4A1657E47B31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nttdata.Steven.Jurado.Repository", "Nttdata.Steven.Jurado.Repository\Nttdata.Steven.Jurado.Repository.csproj", "{F48738F9-0647-4544-B738-610050D621DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nttdata.Steven.Jurado.Repository", "Nttdata.Steven.Jurado.Repository\Nttdata.Steven.Jurado.Repository.csproj", "{F48738F9-0647-4544-B738-610050D621DF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D540932C-A322-4A19-9BAC-48245461227F}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		.gitignore = .gitignore
+		Dockerfile = Dockerfile
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nttdata.Steven.Jurado.Repository.Sql", "Nttdata.Steven.Jurado.Repository.Sql\Nttdata.Steven.Jurado.Repository.Sql.csproj", "{84F903C2-0C1B-4BB9-B757-8E4C2D9E58FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nttdata.Steven.Jurado.Repository.Sql", "Nttdata.Steven.Jurado.Repository.Sql\Nttdata.Steven.Jurado.Repository.Sql.csproj", "{84F903C2-0C1B-4BB9-B757-8E4C2D9E58FA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Application", "2.Application", "{A29C8874-31F5-431B-9660-99640165294D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nttdata.Steven.Jurado.Application", "Nttdata.Steven.Jurado.Application\Nttdata.Steven.Jurado.Application.csproj", "{1E15D389-BE92-411B-A3B1-DDD0F38E81F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nttdata.Steven.Jurado.Application", "Nttdata.Steven.Jurado.Application\Nttdata.Steven.Jurado.Application.csproj", "{1E15D389-BE92-411B-A3B1-DDD0F38E81F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{529D4C56-4EE8-4E9C-8342-14D1F2859ACD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nttdata.Steven.Jurado.Api.Test", "Nttdata.Steven.Jurado.Api.Test\Nttdata.Steven.Jurado.Api.Test.csproj", "{7DE1BCF7-0156-43B4-97C1-3AFAE4F58990}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,6 +61,10 @@ Global
 		{1E15D389-BE92-411B-A3B1-DDD0F38E81F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E15D389-BE92-411B-A3B1-DDD0F38E81F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E15D389-BE92-411B-A3B1-DDD0F38E81F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DE1BCF7-0156-43B4-97C1-3AFAE4F58990}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DE1BCF7-0156-43B4-97C1-3AFAE4F58990}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DE1BCF7-0156-43B4-97C1-3AFAE4F58990}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DE1BCF7-0156-43B4-97C1-3AFAE4F58990}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +76,8 @@ Global
 		{F48738F9-0647-4544-B738-610050D621DF} = {04AA4B4B-C3CF-4613-B246-0C2EA352587C}
 		{84F903C2-0C1B-4BB9-B757-8E4C2D9E58FA} = {04AA4B4B-C3CF-4613-B246-0C2EA352587C}
 		{1E15D389-BE92-411B-A3B1-DDD0F38E81F9} = {A29C8874-31F5-431B-9660-99640165294D}
+		{529D4C56-4EE8-4E9C-8342-14D1F2859ACD} = {564629BE-8F5A-47C8-BE59-953D1DA8192F}
+		{7DE1BCF7-0156-43B4-97C1-3AFAE4F58990} = {529D4C56-4EE8-4E9C-8342-14D1F2859ACD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ADB98203-637D-44A9-9B54-8D6F82397EE5}
