@@ -19,11 +19,11 @@
         protected void DeleteWhiteSpace(ClientRequest clientRequest)
         {
 
-            clientRequest.UserName.Trim();
-            clientRequest.Password.Trim();
-            clientRequest.Name.Trim();
-            clientRequest.Address.Trim();
-            clientRequest.Telephone.Trim();
+            clientRequest?.UserName?.Trim();
+            clientRequest?.Password?.Trim();
+            clientRequest?.Name?.Trim();
+            clientRequest?.Address?.Trim();
+            clientRequest?.Telephone?.Trim();
 
         }
 
